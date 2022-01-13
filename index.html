@@ -17,7 +17,7 @@
       <h1 class="title">Lista de la compra</h1>
       <ul class="topbar__link-list">
         <li class="link-list__link"><a>Principal</a></li>
-        <li class="link-list__link"><a>Lista</a></li>
+        <li class="link-list__link strong"><a>Lista</a></li>
         <li class="link-list__link"><a>Acerca de</a></li>
       </ul>
     </header>
@@ -27,16 +27,25 @@
     </section>
     <section class="items-container">
       <ul class="item-list">
-        <li class="item">Pan</li>
-        <li class="item">Azúcar</li>
-        <li class="item">Leche</li>
+        <li class="item crossed"><input type="checkbox" />Pan</li>
+        <li class="item"><input type="checkbox" />Azúcar</li>
+        <li class="item crossed"><input type="checkbox" />Leche</li>
       </ul>
       <ul class="price-list">
-        <li class="price">0.75€</li>
-        <li class="price"></li>
-        <li class="price">1.25€</li>
+        <li class="price">
+          0.75€<i class="fa fa-times" aria-hidden="true"></i>
+        </li>
+        <li class="price">
+          <i class="fa fa-times" aria-hidden="true"><span></span></i>
+        </li>
+        <li class="price">
+          1.25€<i class="fa fa-times" aria-hidden="true"></i>
+        </li>
       </ul>
     </section>
-    <p class="total">1.95€</p>
+    <div class="separator"></div>
+    <section class="total-section">
+      <p class="total">1.95€</p>
+    </section>
   </body>
 </html>

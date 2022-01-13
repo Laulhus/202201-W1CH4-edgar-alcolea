@@ -3,14 +3,21 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   width: 70vw;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .topbar {
   background-color: #5e81d1;
+  position: relative;
+  height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
 .title {
   display: inline;
+  padding: 15px;
+  font-size: 28px;
 }
 
 .topbar__link-list,
@@ -22,10 +29,79 @@ body {
   display: inline-block;
 }
 
-.summary-container {
-  background-color: #f87500;
+.topbar__link-list {
+  position: absolute;
+  right: 10px;
+  padding: 15px;
 }
 
+.link-list__link {
+  padding: 3px;
+  font-size: 18px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.summary-container {
+  background-color: #f87500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 7vh;
+}
+.summary {
+  position: absolute;
+  right: 10px;
+  padding: 15px;
+  font-size: 22px;
+}
+.icon {
+  font-size: 40px;
+  padding: 15px;
+}
 .items-container {
   background-color: #ff8d27;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.price-list {
+  position: absolute;
+  right: 10px;
+  padding-right: 15px;
+  font-size: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.item-list {
+  list-style-type: none;
+  padding-left: 15px;
+  font-size: 22px;
+  position: relative;
+}
+.total-section {
+  background-color: #ff8d27;
+  height: 70vh;
+  padding: 0 15px;
+  position: relative;
+}
+.price i {
+  padding-left: 10px;
+  font-size: 23px;
+}
+.separator {
+  border-top: 1px solid rgba(255, 255, 255, 0.404);
+}
+.total {
+  position: absolute;
+  font-size: 23px;
+  right: 25px;
 }
