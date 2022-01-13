@@ -25,7 +25,7 @@ body {
 .icon,
 .summary,
 .item-list,
-.price-listadded {
+.price-list {
   display: inline-block;
 }
 
@@ -39,16 +39,53 @@ body {
   padding: 3px;
   font-size: 18px;
 }
+
 .strong {
   font-weight: bold;
 }
+
 .crossed {
   text-decoration: line-through;
 }
+
 .summary-container {
   background-color: #f87500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 7vh;
 }
-
+.summary {
+  position: absolute;
+  right: 10px;
+  padding: 15px;
+  font-size: 22px;
+}
+.icon {
+  font-size: 40px;
+  padding: 15px;
+}
 .items-container {
   background-color: #ff8d27;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  height: 50vh;
+}
+.price-list {
+  position: absolute;
+  right: 10px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+.item-list {
+  list-style-type: none;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.total {
+  font-size: 18px;
+  margin-left: auto;
 }
