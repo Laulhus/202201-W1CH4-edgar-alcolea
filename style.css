@@ -1,0 +1,31 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.topbar {
+  background-color: #5e81d1;
+}
+
+.title {
+  display: inline;
+}
+
+.topbar__link-list,
+.link-list__link,
+.icon,
+.summary,
+.item-list,
+.price-list {
+  display: inline-block;
+}
+
+.summary-container {
+  background-color: #f87500;
+}
+
+.items-container {
+  background-color: #ff8d27;
+}
