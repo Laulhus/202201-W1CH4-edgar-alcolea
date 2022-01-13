@@ -68,24 +68,40 @@ body {
 .items-container {
   background-color: #ff8d27;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
-  border-bottom: 1px solid #fff;
-  height: 50vh;
 }
 .price-list {
   position: absolute;
   right: 10px;
   padding-right: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .item-list {
   list-style-type: none;
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 22px;
+  position: relative;
 }
-
+.total-section {
+  background-color: #ff8d27;
+  height: 70vh;
+  padding: 0 15px;
+  position: relative;
+}
+.price i {
+  padding-left: 10px;
+  font-size: 23px;
+}
+.separator {
+  border-top: 1px solid rgba(255, 255, 255, 0.404);
+}
 .total {
-  font-size: 18px;
-  margin-left: auto;
+  position: absolute;
+  font-size: 23px;
+  right: 25px;
 }
